@@ -24,23 +24,23 @@ svg {
 
 .kick-pad {
   background: rgb(160, 211, 224);
-  .active {
-    background: rgb(59, 197, 231);
-  }
+}
+.kick-pad.active {
+  background: rgb(59, 197, 231);
 }
 
 .snare-pad {
   background: rgb(224, 160, 208);
-  .active {
-    background: rgb(218, 58, 178);
-  }
+}
+.snare-pad.active {
+  background: rgb(218, 58, 178);
 }
 
 .hihat-pad {
   background: rgb(224, 194, 160);
-  .active {
-    background: rgb(241, 158, 64);
-  }
+}
+.hihat-pad.active {
+  background: rgb(241, 158, 64);
 }
 
 .sequencer {
@@ -101,4 +101,13 @@ svg {
 select {
   padding: 1rem;
   font-size: 1rem;
+}
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }

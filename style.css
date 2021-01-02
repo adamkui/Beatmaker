@@ -27,7 +27,7 @@ svg {
   background: #a0d3e0;
 }
 
-.kick-pad .active {
+.kick-pad.active {
   background: #3bc5e7;
 }
 
@@ -35,7 +35,7 @@ svg {
   background: #e0a0d0;
 }
 
-.snare-pad .active {
+.snare-pad.active {
   background: #da3ab2;
 }
 
@@ -43,7 +43,7 @@ svg {
   background: #e0c2a0;
 }
 
-.hihat-pad .active {
+.hihat-pad.active {
   background: #f19e40;
 }
 
@@ -133,5 +133,27 @@ svg {
 select {
   padding: 1rem;
   font-size: 1rem;
+}
+
+@-webkit-keyframes playTrack {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes playTrack {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 /*# sourceMappingURL=style.css.map */
